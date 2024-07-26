@@ -97,7 +97,7 @@ public class CepService {
 }
 ```
 ---
-`Adress`
+### `Adress`
 
 The `Adress` class represents the address details returned from the ViaCEP API. It contains fields for the postal code, street, complement, neighborhood, city, and state, and provides a `toString` method for displaying the address information.
 
@@ -137,7 +137,7 @@ public class Adress {
 }
 ```
 ---
-`CepException`
+### `CepException`
 
 The `CepException` class is a custom exception used to handle errors related to CEP processing.
 
@@ -156,7 +156,7 @@ public class CepException extends RuntimeException {
 }
 ```
 ---
-`AddressFields`
+### `AddressFields`
 
 The `AddressFields` class is a record used to map the JSON response from the ViaCEP API to a Java object.
 
@@ -168,7 +168,7 @@ public record AddressFields(String cep, String logradouro, String complemento, S
 }
 ```
 ---
-`JSONGenerate`
+### `JSONGenerate`
 
 The `JSONGenerate` class is responsible for converting the `Adress` object to a JSON file. It uses the `Gson` library to format the JSON output and save it to a file named based on the postal code.
 
